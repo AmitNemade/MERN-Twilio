@@ -36,7 +36,7 @@ module.exports={
         const { body } = req;
 
         let message;
-        console.log(body)
+        console.log("1==>,"body)
       
         if (body.NumMedia > 0) {
           message = new MessagingResponse().message("Thanks for the image! Here's one for you!");
