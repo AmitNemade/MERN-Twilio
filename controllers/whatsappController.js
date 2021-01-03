@@ -28,4 +28,7 @@ module.exports={
             res.json(err);
         })
     },
+    RecieveMessage: async (req, res) => {
+        
+    }
 }

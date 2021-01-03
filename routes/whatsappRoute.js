@@ -4,5 +4,6 @@ const router=express.Router();
 const WhatsAppCtrl=require("../controllers/whatsappController");
 
 router.post("/sendMessage/",WhatsAppCtrl.SendMessage);
+router.post("/recieveMessage/",WhatsAppCtrl.RecieveMessage);
 
 module.exports=router;
