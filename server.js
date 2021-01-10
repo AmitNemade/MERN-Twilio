@@ -36,7 +36,7 @@ app.use(express.urlencoded({extended:true,limit:'50mb'}))
 
 // Routes
 app.use("/node/api/whatsapp", whatsapp)
-app.get('/', (req, res) => { res.send('Hello from Express!')})
+app.get('/', (req, res) => { res.send('Hello from Express!!')})
 
 
 server.listen(process.env.PORT || 5000,()=>{

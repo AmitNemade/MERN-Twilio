@@ -32,12 +32,15 @@ module.exports={
             res.json(err);
         })
     },
-    RecieveMessage: async (req, res) => {
+    Webhook: async (req, res) => {
         const { body } = req;
 
         let message;
         console.log("1==>",body)
       
+        // var response = get_response(body.body);
+        // message = new MessagingResponse().message(response);
+
         if (body.NumMedia > 0) {
           message = new MessagingResponse().message("Thanks for the image! Here's one for you!");
           message.media(goodBoyUrl);
@@ -49,6 +52,12 @@ module.exports={
         res.send(message.toString()).status(200);
     }
 }
+
+
+
+// const get_response = (body) => {
+    
+// }
 
 
 
